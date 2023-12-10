@@ -23,7 +23,11 @@ public class EnemyAI : MonoBehaviour
         player = GameObject.Find("Player");
         buller_parent = GameObject.Find("BulletParent");
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-        spriteRenderer.sprite = enemySO.sprite;
+
+        if (enemySO.sprite != null)
+        {
+            spriteRenderer.sprite = enemySO.sprite;
+        }
 
         health = enemySO.healthMax;
         height = Random.Range(enemySO.height -0.5f, enemySO.height + 0.5f);
