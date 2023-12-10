@@ -1,3 +1,2 @@
 # games-seraphs
-
-Seraphs last stand copy game teste
+Seraphs last stand copy  game
